@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.container {
+  margin: 0 20px;
+  padding: 10px;
+}
 .search {
   background-image: url(../assets/search.png);
   background-size: 20px 20px;
@@ -126,4 +130,70 @@ p {
   border: none;
   font-weight: 450;
   margin: 10px;
+}
+
+.popular-header {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-heading {
+  left: 40px;
+}
+.next-icons {
+  gap: 10px;
+}
+
+.category-card {
+  border: 1px solid rgb(163, 158, 158);
+  padding: 10px;
+  border-radius: 8px;
+  width: 13%;
+}
+.category-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.popularCat-cards {
+  display: flex;
+  gap: 15px;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.featureCard {
+  width: 20%;
+  border: 1px solid rgb(163, 158, 158);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.featureCard img {
+  width: 100%;
+}
+
+.featuredCards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.category-div-btns {
+  margin: 10px;
+}
+
+.category-div-btns button {
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+}
+
+.featuredbtn {
+  color: rgb(46, 93, 72);
+  background-color: rgb(240, 195, 127);
 }
