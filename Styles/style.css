@@ -1,17 +1,19 @@
 * {
-  margin: 0;
+  margin: 0%;
+  /* font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal; */
 }
 
 .container {
-  margin: 0 20px;
-  padding: 10px;
+  margin: 0;
 }
 .search {
   background-image: url(../assets/search.png);
   background-size: 20px 20px;
   background-position: right 10px center;
   background-repeat: no-repeat;
-  padding-left: 40px;
+  padding-left: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   height: 40px;
@@ -49,8 +51,8 @@ svg {
   justify-content: flex-start;
 }
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 100px;
   left: 0px;
   padding: 0;
 }
@@ -132,15 +134,25 @@ p {
   margin: 10px;
 }
 
+.shop-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(46, 93, 72);
+  border: 2px solid rgb(46, 93, 72);
+}
+
 .popular-header {
   margin: 0 30px;
   display: flex;
   justify-content: space-between;
 }
 
-.popular-heading {
+/* .popular-heading {
   left: 40px;
+} */
+.popular-categories {
+  width: 100%;
 }
+
 .next-icons {
   gap: 10px;
 }
@@ -155,6 +167,104 @@ p {
   width: 100%;
   border-radius: 8px;
 }
+.card-img {
+  position: relative;
+}
+.hover-img {
+  position: absolute;
+  transition: opacity 1s ease-out;
+  /* transform: scale(1.1); */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* width: 200px;
+  height: 300px; */
+}
+
+.wishlist-icons {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 30%;
+  gap: 20px;
+  z-index: 2;
+  text-align: center;
+}
+
+.wishlist-icons i {
+  color: #46504b;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.wishlist-icons i:hover {
+  background-color: rgb(34, 116, 105);
+}
+
+.normal-img {
+  opacity: 1;
+}
+
+.hover-img,
+.wishlist-icons {
+  opacity: 0;
+}
+
+.card-img:hover .normal-img {
+  opacity: 0;
+}
+
+.card-img:hover .hover-img {
+  opacity: 1;
+}
+
+.card-img:hover .wishlist-icons {
+  opacity: 1;
+}
+.wishlist-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.desc1,
+.desc2,
+.desc3 {
+  padding: 6px 10px;
+  background-color: rgb(34, 116, 105);
+  color: white;
+}
+
+.desc1,
+.desc2,
+.desc3 {
+  opacity: 0;
+  position: absolute;
+  bottom: 50px;
+  left: -20px;
+}
+
+.icons:hover .desc1 {
+  opacity: 1;
+}
+.icons:hover .desc2 {
+  opacity: 1;
+}
+.icons:hover .desc3 {
+  opacity: 1;
+}
+
+.desc2 {
+  left: 25px;
+}
+
+.desc3 {
+  left: 100px;
+}
 
 .popularCat-cards {
   display: flex;
@@ -164,16 +274,24 @@ p {
   text-align: center;
 }
 
+.category-div-btns,
+.popular-header {
+  padding: 10px 45px;
+  margin: 0, 80px;
+}
+
 .featureCard {
   width: 20%;
   border: 1px solid rgb(163, 158, 158);
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
+  text-align: left;
 }
 
 .featureCard img {
   width: 100%;
+  border-radius: 16px;
 }
 
 .featuredCards {
@@ -195,5 +313,210 @@ p {
 
 .featuredbtn {
   color: rgb(46, 93, 72);
-  background-color: rgb(240, 195, 127);
+  background-color: rgb(245, 178, 77);
+}
+
+.stars {
+  color: rgb(226, 174, 78);
+}
+.card-img {
+  position: relative;
+}
+
+.feature {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 4px 10px;
+  background-color: rgb(225, 111, 130);
+  color: white;
+  border-radius: 16px;
+  font-size: small;
+}
+
+.prod2,
+.prod7 {
+  background-color: rgba(11, 159, 137, 0.651);
+}
+
+.prod3 {
+  background-color: rgb(227, 143, 33);
+}
+
+.prod4,
+.prod5,
+.prod6 {
+  background-color: rgb(62, 135, 174);
+}
+
+.featureCard .fa-bag-shopping {
+  position: relative;
+  color: rgb(66, 61, 61);
+  left: 120px;
+  background-color: rgb(202, 221, 213);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.shopping-bag {
+  position: relative;
+}
+
+.cart-icon {
+  position: relative;
+  padding: 6px 10px;
+  background-color: rgb(34, 116, 105);
+  color: white;
+  opacity: 0;
+  bottom: 40px;
+  left: 55px;
+}
+.shopping-bag:hover .cart-icon {
+  background-color: rgb(34, 116, 105);
+  opacity: 1;
+}
+
+.shopping-bag:hover .fa-bag-shopping {
+  background-color: rgb(34, 116, 105);
+}
+
+.deals {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.deal {
+  position: relative;
+  width: 43%;
+  margin: 20px;
+}
+
+.deal-details {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.deal img {
+  width: 100%;
+  height: 450px;
+}
+
+.Box span {
+  background-color: rgb(34, 116, 105);
+  padding: 10px 14px;
+  margin: 8px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.time span {
+  padding: 10px 14px;
+  /* margin: 8px; */
+  border: none;
+  border-radius: 5px;
+}
+
+.line {
+  border-bottom: 2px solid rgb(226, 216, 216);
+  padding-bottom: 20px;
+  height: 2px;
+  width: auto;
+}
+
+.top-line {
+  border-bottom: 2px solid rgb(40, 88, 82);
+  padding-bottom: 20px;
+  height: 2px;
+  width: 20%;
+}
+
+.hot-releases h3 {
+  border-width: 10px solid green;
+}
+
+.release-product {
+  display: flex;
+
+  margin: 30px 0px;
+}
+
+.release-product img {
+  width: 100px;
+}
+
+.release-categories {
+  margin: 0 25px;
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.subscribe-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px 100px;
+
+  background-color: rgb(157, 202, 186);
+  align-items: center;
+}
+
+.subscribe-btn {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px 15px;
+}
+
+#email {
+  padding: 10px 10px;
+  padding-right: 100px;
+}
+
+.news-letter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.address-payment-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.contact,
+.payment-gateways .my-account,
+address {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.social-media {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
+.address p:hover,
+.my-account p:hover {
+  transform: translateX(5px);
+  cursor: pointer;
+  color: rgb(40, 88, 82);
+}
+
+footer {
+  margin: 0px 30px;
+  padding: 10px;
+  border-top: 1px solid rgb(172, 166, 166);
+  display: flex;
+  justify-content: space-between;
 }
