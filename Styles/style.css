@@ -85,6 +85,7 @@ a:hover {
 }
 .shopping-bag {
   position: relative;
+  align-items: center;
 }
 .heart-count,
 .bag-count {
@@ -97,6 +98,18 @@ a:hover {
   text-align: center;
   right: -10px;
   top: -5px;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 10px;
+  background-color: hsl(140, 3%, 83%);
+  padding: 15px 70px;
+  margin-bottom: 30px;
+}
+
+.found-items-count {
+  padding: 15px 70px;
 }
 
 .hero-section {
@@ -457,6 +470,19 @@ p {
   padding: 30px;
 }
 
+.scroll-num-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px;
+}
+
+.scroll-num-count span {
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .subscribe-container {
   display: flex;
   gap: 20px;
@@ -502,8 +528,8 @@ address {
 
 .social-media {
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .address p:hover,
@@ -519,4 +545,244 @@ footer {
   border-top: 1px solid rgb(172, 166, 166);
   display: flex;
   justify-content: space-between;
+}
+.dashboard table,
+.message table,
+.cart-totals table,
+.compare-table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.dashboard td,
+.dashboard th,
+.message td,
+.message th {
+  border-spacing: 0;
+  padding: 10px 50px;
+  padding-right: 150px;
+}
+.compare-table td {
+  border-spacing: 0;
+  padding: 10px 50px;
+}
+
+.cart-totals td {
+  border-spacing: 0;
+  padding: 16px 50px;
+  padding-right: 150px;
+}
+
+.dashboard i,
+img {
+  padding: 2px;
+  margin-right: 5px;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px;
+  padding: 0 20px;
+}
+
+.wishlist-container,
+.additional-info-container {
+  position: relative;
+  padding: 50px;
+  margin: 10px auto;
+  width: 80%;
+  border-width: 70%;
+}
+
+.wishlist-container table,
+.additional-info-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wishlist-container th,
+.info th {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid rgb(146, 141, 141);
+}
+
+.wishlist-container td,
+.additional-info-container td {
+  border-bottom: 2px solid rgb(160, 154, 154);
+  text-align: center;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.wishlist-img img {
+  height: 100px;
+  width: auto;
+}
+
+.info-img img {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.quant {
+  padding: 4px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.cart-btns-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.fingerprint {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: -110px;
+  background-color: white;
+  padding: 0 20px;
+  color: rgb(146, 141, 141);
+}
+
+.shipping-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.cart-totals {
+  width: 40%;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.shipping-container input {
+  padding: 8px 5px;
+  padding-right: 60px;
+  margin: 5px;
+}
+
+h4,
+h3 {
+  padding: 5px;
+}
+
+.compare-container {
+  width: 80%;
+  padding: 40px 100px;
+}
+
+/* .color-circle {
+  padding: 10px 10px;
+  width: 10px;
+  height: 10px;
+} */
+
+.henley-shirt {
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+}
+.shirt-details {
+  width: 50%;
+  border-bottom: 1px solid grey;
+}
+
+.shirt-details p {
+  margin-top: 8px;
+}
+
+.shirt-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.shirt-dim {
+  width: 50%;
+  margin-left: 150px;
+}
+.shirt-dim img {
+  width: 20%;
+}
+
+.size span {
+  padding: 10px 10px;
+  border: 1px solid black;
+}
+
+.span-3 {
+  padding: 7px 25px;
+  border: 1px solid grey;
+}
+
+.shirt-view {
+  display: flex;
+}
+
+textarea {
+  width: 100%; /* width in pixels or percentages */
+  height: 150px; /* height in pixels */
+}
+
+.add-review input {
+  padding: 10px 10px;
+  padding-right: 50px;
+  width: 44%;
+  margin-top: 10px;
+}
+
+.related-products {
+  padding: 20px;
+}
+
+.related-products h2 {
+  padding: 15px 80px;
+}
+
+.login-register-container {
+  gap: 70px;
+  padding: 50px;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.login,
+.register {
+  padding-top: 20px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  width: 50%;
+}
+
+.login-register-container input {
+  padding: 10px 10px;
+  padding-right: 300px;
+  margin: 10px 0;
+  margin-left: 20px;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+.login-register-container h3,
+.login-register-container button {
+  margin-left: 20px;
 }
