@@ -22,7 +22,7 @@
   <body>
     <header class="header">
       <div class="contact-details">
-        <p>(+1)703-992-3406</p>
+        <p>(+1)703-190-9006</p>
         <p>Our location</p>
       </div>
       <div>
@@ -40,34 +40,38 @@
             <ul type="none">
               <li><a href="../HTML/index.html" style="color: rgb(39, 87, 65);">Home</a></li>
               <li><a href="../HTML/shop.html">Shop</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Compare</a></li>
-              <li><a href="#">Login</a></li>
+              <li><a href="../HTML/my-account.html">My Account</a></li>
+              <li><a href="../HTML/compare.html">Compare</a></li>
+              <li><a href="../HTML/login.html">Login</a></li>
             </ul>
           </div>
         </div>
         <div class="search-bar">
           <input class="search" type="text" placeholder="Search For Items..." />
           <div class="heart">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <title>121 heart</title>
-              <g id="_01_align_center" data-name="01 align center">
-                <path
-                  d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"
-                />
-              </g>
-            </svg>
-            <span class="heart-count">3</span>
+            <a href="../HTML/wishlist.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>121 heart</title>
+                    <g id="_01_align_center" data-name="01 align center">
+                      <path
+                        d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"
+                      />
+                    </g>
+                  </svg>
+                  <span class="heart-count">3</span>
+            </a>
           </div>
           <div class="shopping-bag">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <title>109 shopping bag</title>
-              <g id="_01_align_center" data-name="01 align center">
-                <path
-                  d="M18,6A6,6,0,0,0,6,6H0V21a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V6ZM12,2a4,4,0,0,1,4,4H8A4,4,0,0,1,12,2ZM22,21a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V8H6v2H8V8h8v2h2V8h4Z"
-                />
-              </g>
-            </svg>
+            <a href="../HTML/cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>109 shopping bag</title>
+                    <g id="_01_align_center" data-name="01 align center">
+                      <path
+                        d="M18,6A6,6,0,0,0,6,6H0V21a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V6ZM12,2a4,4,0,0,1,4,4H8A4,4,0,0,1,12,2ZM22,21a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V8H6v2H8V8h8v2h2V8h4Z"
+                      />
+                    </g>
+                  </svg>
+              </a>
             <span class="bag-count">3</span>
           </div>
         </div>
@@ -151,10 +155,20 @@
               <div class="card-img">
                 <img src="../assets/product-1-1.jpg" alt="product1" class="normal-img"/>
                <span> <img src="../assets/product-1-2.jpg" alt="product1" class="hover-img">
-                <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
+                <div class="wishlist-icons">
+                  <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                    <span class="desc1">Quick View
+                    </span>
+                  </span>
+                  <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                    <span class="desc2">Add To Wishlist
+                    </span>
+                  </span>
+                  <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                    <span class="desc3">Compare
+                    </span>
+                  </span>
                 </div>
-                <!-- <span class="quick-view">Quick View</span><span class="add-wishlist">Add To Wishlist</span><span class="compare">Compare</span>
-                </span> -->
             </span>
                 <span class="feature prod1">Hot</span>
               </div>
@@ -177,8 +191,21 @@
               <div class="card-img">
                 <img src="../assets/product-2-1.jpg" alt="product1" class="normal-img"/>
                 <span> <img src="../assets/product-2-2.jpg" alt="product1" class="hover-img">
-                    <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
-                    </div></span>
+                  <div class="wishlist-icons">
+                    <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                      <span class="desc1">Quick View
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                      <span class="desc2">Add To Wishlist
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                      <span class="desc3">Compare
+                      </span>
+                    </span>
+                  </div>
+                </span>
                 <span class="feature prod2">Hot</span>
               </div>
               <p style="color: rgb(101, 107, 107)">Clothing</p>
@@ -199,8 +226,21 @@
               <div class="card-img">
                 <img src="../assets/product-3-1.jpg" alt="product1" class="normal-img"/>
                 <span> <img src="../assets/product-3-2.jpg" alt="product1" class="hover-img">
-                    <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
-                    </div></span>
+                  <div class="wishlist-icons">
+                    <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                      <span class="desc1">Quick View
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                      <span class="desc2">Add To Wishlist
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                      <span class="desc3">Compare
+                      </span>
+                    </span>
+                  </div>
+                </span>
                 <span class="feature prod3">Hot</span>
               </div>
 
@@ -222,8 +262,21 @@
               <div class="card-img">
                 <img src="../assets/product-4-1.jpg" alt="product1" class="normal-img"/>
                 <span> <img src="../assets/product-4-2.jpg" alt="product1" class="hover-img">
-                    <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
-                    </div></span>
+                  <div class="wishlist-icons">
+                    <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                      <span class="desc1">Quick View
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                      <span class="desc2">Add To Wishlist
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                      <span class="desc3">Compare
+                      </span>
+                    </span>
+                  </div>
+                </span>
                 <span class="feature prod4">Hot</span>
               </div>
 
@@ -246,8 +299,21 @@
               <div class="card-img">
                 <img src="../assets/product-5-1.jpg" alt="product1" class="normal-img"/>
                 <span> <img src="../assets/product-5-2.jpg" alt="product1" class="hover-img">
-                    <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
-                    </div></span>
+                  <div class="wishlist-icons">
+                    <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                      <span class="desc1">Quick View
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                      <span class="desc2">Add To Wishlist
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                      <span class="desc3">Compare
+                      </span>
+                    </span>
+                  </div>
+                </span>
                 <span class="feature prod5">-30%</span>
               </div>
 
@@ -269,8 +335,21 @@
               <div class="card-img">
                 <img src="../assets/product-6-1.jpg" alt="product1" class="normal-img" />
                 <span> <img src="../assets/product-6-2.jpg" alt="product1" class="hover-img">
-                    <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
-                    </div></span>
+                  <div class="wishlist-icons">
+                    <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                      <span class="desc1">Quick View
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                      <span class="desc2">Add To Wishlist
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                      <span class="desc3">Compare
+                      </span>
+                    </span>
+                  </div>
+                </span>
                 <span class="feature prod6">-22%</span>
               </div>
 
@@ -292,8 +371,21 @@
               <div class="card-img">
                 <img src="../assets/product-7-1.jpg" alt="product1" class="normal-img"/>
                 <span> <img src="../assets/product-7-2.jpg" alt="product1" class="hover-img">
-                    <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
-                    </div></span>
+                  <div class="wishlist-icons">
+                    <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                      <span class="desc1">Quick View
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                      <span class="desc2">Add To Wishlist
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                      <span class="desc3">Compare
+                      </span>
+                    </span>
+                  </div>
+                </span>
                 <span class="feature prod7">Hot</span>
               </div>
 
@@ -315,8 +407,21 @@
               <div class="card-img">
                 <img src="../assets/product-8-1.jpg" alt="product1" class="normal-img" />
                 <span> <img src="../assets/product-8-2.jpg" alt="product1" class="hover-img">
-                    <div class="wishlist-icons"><span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i><span class="desc1">Quick View</span></span><span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i><span class="desc2">Add To Wishlist</span></span><span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i><span class="desc3">Compare</span></span>
-                    </div></span>
+                  <div class="wishlist-icons">
+                    <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                      <span class="desc1">Quick View
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                      <span class="desc2">Add To Wishlist
+                      </span>
+                    </span>
+                    <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                      <span class="desc3">Compare
+                      </span>
+                    </span>
+                  </div>
+                </span>
               </div>
 
               <p style="color: rgb(101, 107, 107)">Clothing</p>
