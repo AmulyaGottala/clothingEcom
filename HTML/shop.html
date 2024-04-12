@@ -20,34 +20,46 @@
   </head>
   <body>
     <header class="header">
-        <div class="contact-details">
-          <p>(+1)703-992-3406</p>
-          <p>Our location</p>
-        </div>
-        <div>
-          <p>Super Values Deals-Save more coupons</p>
-        </div>
-        <div>
-          <p>Log In / Sign Up</p>
-        </div>
-      </header>
-      <div class="container">
-        <nav class="nav-container">
-          <div class="nav-options">
-            <div><a href="../HTML/index.html"><img class="logo" src="https://www.achieversit.com/assets/images/logo-white.png" alt="Logo" /></a></div>
-            <div class="options">
-              <ul type="none">
-                <li><a href="../HTML/index.html">Home</a></li>
-                <li><a href="../HTML/shop.html" style="color: rgb(39, 87, 65);">Shop</a></li>
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Compare</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
-            </div>
+      <div class="contact-details">
+        <p>(+1)703-992-3406</p>
+        <p>Our location</p>
+      </div>
+      <div>
+        <p>Super Values Deals-Save more coupons</p>
+      </div>
+      <div>
+        <a href="../HTML/login.html"><p>Log In / Sign Up</p></a>
+      </div>
+    </header>
+    <div class="container">
+      <nav class="nav-container">
+        <div class="nav-options">
+          <div>
+            <a href="../HTML/index.html"
+              ><img
+                class="logo"
+                src="https://www.achieversit.com/assets/images/logo-white.png"
+                alt="Logo"
+            /></a>
           </div>
-          <div class="search-bar">
-            <input class="search" type="text" placeholder="Search For Items..." />
-            <div class="heart">
+          <div class="options">
+            <ul type="none">
+              <li><a href="../HTML/index.html">Home</a></li>
+              <li>
+                <a href="../HTML/shop.html" style="color: rgb(39, 87, 65)"
+                  >Shop</a
+                >
+              </li>
+              <li><a href="../HTML/my-account.html">My Account</a></li>
+              <li><a href="../HTML/compare.html">Compare</a></li>
+              <li><a href="../HTML/login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-bar">
+          <input class="search" type="text" placeholder="Search For Items..." />
+          <div class="heart">
+            <a href="../HTML/wishlist.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <title>121 heart</title>
                 <g id="_01_align_center" data-name="01 align center">
@@ -57,8 +69,10 @@
                 </g>
               </svg>
               <span class="heart-count">3</span>
-            </div>
-            <div class="shopping-bag">
+            </a>
+          </div>
+          <div class="shopping-bag">
+            <a href="../HTML/cart.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <title>109 shopping bag</title>
                 <g id="_01_align_center" data-name="01 align center">
@@ -67,52 +81,651 @@
                   />
                 </g>
               </svg>
-              <span class="bag-count">3</span>
-            </div>
+            </a>
+            <span class="bag-count">3</span>
           </div>
-        </nav>
-        <div class="subscribe-container">
-            <span class="news-letter"><img src="../assets/icon-email.svg" width="40px"; height="40px" alt=""><span>Sign in to News Letter</span></span><span>...and receive $25 coupon for first shopping </span>
-           <span><input type="email" id="email" placeholder="Enter Your Email"><button class="subscribe-btn">Subscribe</button></span>
         </div>
-        <div class="address-payment-container">
-            <div class="contact">
-                <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="Logo">
-                <p style="font-weight: 600;font-size: large;">Contact</p>
-                <p><b>Address:</b>  #63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029</p>
-                <p><b>Phone:</b> +91 8431-040-457</p>
-                <p><b>Hours:</b> 7:00am to 21:00pm</p>
-                <br>
-                <p>Follow Me</p>
-                <p class="social-media"><img src="../assets/icon-facebook.svg" alt="facebook"><img src="../assets/icon-instagram.svg" alt="instagram"><img src="../assets/icon-twitter.svg" alt="twitter"><img src="../assets/icon-pinterest.svg" alt="pinterest"><img src="../assets/icon-youtube.svg" alt="youtube"></p>
-            </div>
-            <div class="address">
-                <span style="font-weight: 600;font-size: large;">Address</span>
-                <p>About Us</p>
-                <p>Delivery Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-                <p>Contact Us</p>
-                <p>Support Center</p>
-            </div>
-            <div class="my-account">
-                <span style="font-weight: 600;font-size: large;">My Account</span>
-                <p>Sign in</p>
-                <p>View Cart</p>
-                <p>My Wishlist</p>
-                <p>Track My Order</p>
-                <p>Help</p>
-                <p>Order</p>
-            </div>
-            <div class="payment-gateways">
-                <p style="font-weight: 600;font-size: large;">Secured Payment Gateways</p>
-                <br>
-                <img src="../assets/payment-method.png" alt="payment-method">
-            </div>
+      </nav>
+      <div class="breadcrumbs">
+        <span>Home</span> <span>&gt;</span><span>Shop</span>
+      </div>
+      <div class="found-items-count">
+        <p>
+          We found <span style="color: rgb(32, 80, 68)">688</span> items for
+          you!
+        </p>
+      </div>
+      <div class="featuredCards">
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-1-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-1-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div>
+              <!-- <span class="quick-view">Quick View</span><span class="add-wishlist">Add To Wishlist</span><span class="compare">Compare</span>
+                </span> -->
+            </span>
+            <span class="feature prod1">Hot</span>
+          </div>
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
         </div>
-        <footer class="footer">
-            <p> &#169;2024 Amulya All Rights Reserved </p>
-            <p>Designed by Amulya G</p>
-        </footer>  
-    </body>
+
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-2-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-2-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+            <span class="feature prod2">Hot</span>
+          </div>
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-3-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-3-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+            <span class="feature prod3">Hot</span>
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-4-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-4-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+            <span class="feature prod4">Hot</span>
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-5-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-5-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+            <span class="feature prod5">-30%</span>
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-6-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-6-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+            <span class="feature prod6">-22%</span>
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-7-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-7-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+            <span class="feature prod7">Hot</span>
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-8-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-8-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-9-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-9-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-10-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-10-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-11-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-11-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+        <div class="featureCard">
+          <div class="card-img">
+            <img
+              src="../assets/product-12-1.jpg"
+              alt="product1"
+              class="normal-img"
+            />
+            <span>
+              <img
+                src="../assets/product-12-2.jpg"
+                alt="product1"
+                class="hover-img"
+              />
+              <div class="wishlist-icons">
+                <span class="icons"
+                  ><i class="fa-regular fa-eye" id="eye-icon"></i
+                  ><span class="desc1">Quick View</span></span
+                ><span class="icons"
+                  ><i class="fa-regular fa-heart" id="heart-icon"></i
+                  ><span class="desc2">Add To Wishlist</span></span
+                ><span class="icons"
+                  ><i class="fa-solid fa-code-compare" id="compare-icon"></i
+                  ><span class="desc3">Compare</span></span
+                >
+              </div></span
+            >
+          </div>
+
+          <p style="color: rgb(101, 107, 107)">Clothing</p>
+          <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
+          <p class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p style="color: rgb(46, 93, 72)">
+            $238.85 <strike style="color: black">$245.8</strike>
+            <span class="shopping-bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="cart-icon">Add To Cart</span></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-num-count">
+      <span style="background-color: rgb(40, 88, 82); color: white">01</span
+      ><span>02</span><span>03</span> <span>...</span> <span>16</span>
+      <span>&gt;&gt;</span>
+    </div>
+
+    <div class="subscribe-container">
+      <span class="news-letter"
+        ><img
+          src="../assets/icon-email.svg"
+          width="40px"
+          ;
+          height="40px"
+          alt=""
+        /><span>Sign in to News Letter</span></span
+      ><span>...and receive $25 coupon for first shopping </span>
+      <span
+        ><input type="email" id="email" placeholder="Enter Your Email" /><button
+          class="subscribe-btn"
+        >
+          Subscribe
+        </button></span
+      >
+    </div>
+    <div class="address-payment-container">
+      <div class="contact">
+        <img
+          src="https://www.achieversit.com/assets/images/logo-white.png"
+          alt="Logo"
+        />
+        <p style="font-weight: 600; font-size: large">Contact</p>
+        <p>
+          <b>Address:</b> #63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage,
+          Bangalore, India - 560029
+        </p>
+        <p><b>Phone:</b> +91 8431-040-457</p>
+        <p><b>Hours:</b> 7:00am to 21:00pm</p>
+        <br />
+        <p>Follow Me</p>
+        <p class="social-media">
+          <img src="../assets/icon-facebook.svg" alt="facebook" /><img
+            src="../assets/icon-instagram.svg"
+            alt="instagram"
+          /><img src="../assets/icon-twitter.svg" alt="twitter" /><img
+            src="../assets/icon-pinterest.svg"
+            alt="pinterest"
+          /><img src="../assets/icon-youtube.svg" alt="youtube" />
+        </p>
+      </div>
+      <div class="address">
+        <span style="font-weight: 600; font-size: large">Address</span>
+        <p>About Us</p>
+        <p>Delivery Information</p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+        <p>Contact Us</p>
+        <p>Support Center</p>
+      </div>
+      <div class="my-account">
+        <span style="font-weight: 600; font-size: large">My Account</span>
+        <p>Sign in</p>
+        <p>View Cart</p>
+        <p>My Wishlist</p>
+        <p>Track My Order</p>
+        <p>Help</p>
+        <p>Order</p>
+      </div>
+      <div class="payment-gateways">
+        <p style="font-weight: 600; font-size: large">
+          Secured Payment Gateways
+        </p>
+        <br />
+        <img src="../assets/payment-method.png" alt="payment-method" />
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&#169;2024 Amulya All Rights Reserved</p>
+      <p>Designed by Amulya G</p>
+    </footer>
+  </body>
 </html>
