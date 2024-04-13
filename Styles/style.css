@@ -35,6 +35,10 @@ svg {
   color: #46504b;
 }
 
+.menu-burger {
+  display: hidden;
+}
+
 .contact-details {
   display: flex;
   justify-content: space-between;
@@ -478,6 +482,16 @@ p {
   margin: 40px;
 }
 
+.scroll-num-count span:nth-child(1) {
+  background-color: rgb(40, 88, 82);
+  color: white;
+}
+
+.scroll-num-count span:hover {
+  background-color: rgb(40, 88, 82);
+  color: white;
+}
+
 .scroll-num-count span {
   padding: 10px;
   border-radius: 5px;
@@ -628,12 +642,6 @@ img {
   border-radius: 50%;
 }
 
-.quant {
-  padding: 4px 20px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
 .cart-btns-container {
   display: flex;
   justify-content: flex-end;
@@ -729,9 +737,12 @@ h3 {
   border: 1px solid black;
 }
 
-.span-3 {
-  padding: 7px 25px;
-  border: 1px solid grey;
+.span-3 input {
+  padding: 7px 15px;
+}
+.span-3 .fa-heart {
+  padding: 7px 15px;
+  border: 1px solid black;
 }
 
 .shirt-view {
@@ -785,4 +796,159 @@ textarea {
 .login-register-container h3,
 .login-register-container button {
   margin-left: 20px;
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media (min-width: 1281px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .options,
+  .search {
+    display: none;
+  }
+  .menu-burger {
+    display: block;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-img {
+    margin: 20px;
+    width: 100%;
+  }
+  .hero-img img {
+    width: 100%;
+  }
+
+  .popularCat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .featureCard {
+    width: 40%;
+    border: 1px solid rgb(163, 158, 158);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+  }
+  .deals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .deal {
+    position: relative;
+    margin: 2px auto;
+    width: 80%;
+    margin: 20px;
+  }
+  .release-categories {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-container input {
+    margin-bottom: 10px;
+  }
+  .subscribe-btn {
+    margin-left: 70px;
+  }
+  .address-payment-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .options,
+  .search {
+    display: none;
+  }
+  .menu-burger {
+    display: block;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-img {
+    margin: 20px;
+    width: 100%;
+  }
+  .hero-img img {
+    width: 100%;
+  }
+
+  .popularCat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .featureCard {
+    width: 70%;
+    border: 1px solid rgb(163, 158, 158);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+  }
+  .deals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .deal {
+    position: relative;
+    margin: 2px auto;
+    width: 80%;
+    margin: 20px;
+  }
+  .release-categories {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-container input {
+    margin-bottom: 10px;
+  }
+  .subscribe-btn {
+    margin-left: 70px;
+  }
+  .address-payment-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
 }
