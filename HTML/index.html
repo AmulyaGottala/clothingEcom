@@ -20,6 +20,7 @@
     />
   </head>
   <body>
+   <!-- page header with contact details starts here -->
     <header class="header">
       <div class="contact-details">
         <p>(+1)703-190-9006</p>
@@ -32,10 +33,20 @@
         <p>Log In / Sign Up</p>
       </div>
     </header>
+   <!-- page header with contact details ends here -->
+
+   <!-- whole page is in container class and it starts here -->
     <div class="container">
+      <!-- navigation tab starts here -->
       <nav class="nav-container">
         <div class="nav-options">
-          <div><a href="../HTML/index.html"><img class="logo" src="https://www.achieversit.com/assets/images/logo-white.png" alt="Logo" /></a></div>
+          <!-- logo image -->
+          <div>
+            <a href="../HTML/index.html">
+              <img class="logo" src="https://www.achieversit.com/assets/images/logo-white.png" alt="Logo"/>
+            </a>
+          </div>
+          <!-- nav-tab options -->
           <div class="options">
             <ul type="none">
               <li><a href="../HTML/index.html" style="color: rgb(39, 87, 65);">Home</a></li>
@@ -46,6 +57,7 @@
             </ul>
           </div>
         </div>
+        <!-- search bar with icons start here-->
         <div class="search-bar">
           <input class="search" type="text" placeholder="Search For Items..." />
           <div class="heart">
@@ -57,8 +69,8 @@
                         d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"
                       />
                     </g>
-                  </svg>
-                  <span class="heart-count">3</span>
+               </svg>
+               <span class="heart-count">3</span>
             </a>
           </div>
           <div class="shopping-bag">
@@ -74,12 +86,32 @@
               </a>
             <span class="bag-count">3</span>
           </div>
-          <div class="menu-burger">
-            <img src="../assets/menu-burger.svg"  width="20px" height="20px" alt="">
+          <div>
+          <div class="hamburger">
+            <button class="hamburger-btn">
+               <!-- <img src="../assets/menu-burger.svg"  width="20px" height="20px" alt=""> -->
+               <?xml version="1.0" encoding="UTF-8"?>
+               <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>                
+            </button>
+            <div class="options-vertical">
+              <ul type="none">
+                <li class="listt"><a href="../HTML/index.html" style="color: rgb(39, 87, 65);">Home</a></li>
+                <li><a href="../HTML/shop.html">Shop</a></li>
+                <li><a href="../HTML/my-account.html">My Account</a></li>
+                <li><a href="../HTML/compare.html">Compare</a></li>
+                <li><a href="../HTML/login.html">Login</a></li>
+              </ul>
+            </div>
           </div>
+          
         </div>
+        </div>
+       <!-- search bar with icons start here-->
       </nav>
+     <!-- navigation tab ends here -->
+
       <main class="main-section">
+        <!-- here section starts here -->
         <div class="hero-section">
           <div class="promotions">
             <p>Hot Promotions</p>
@@ -94,6 +126,9 @@
             <img src="../assets/home-img.png" alt="" />
           </div>
         </div>
+       <!-- here section ends here -->
+
+       <!-- popular categories start here -->
         <div class="popular-categories">
           <div class="popular-header">
             <h2 class="popular-heading">
@@ -114,6 +149,7 @@
               ></span>
             </div>
           </div>
+          <!-- cards of popular categories -->
           <div class="popularCat-cards">
             <div class="category-card">
                 <a href="../HTML/shop.html"><img src="../assets/category-1.jpg" alt="category1" />
@@ -147,35 +183,38 @@
             </div>
           </div>
         </div>
+        <!-- popular categories end here -->
+
+        <!-- category cards container starts here -->
         <div class="category-div-container">
-          <div class="category-div-btns">
-            <button class="featuredbtn active">Featured</button
-            ><button class="popularbtn">Popular</button>
+          <!-- categories buttons -->
+          <div class="category-div-btns"> 
+            <button class="featuredbtn active">Featured</button>
+            <button class="popularbtn">Popular</button>
             <button class="newAddbtn">New Added</button>
           </div>
+
+          <!-- featured category cards -->
           <div class="featuredCards">
             <div class="featureCard">
               <div class="card-img">
-                <a href="../HTML/shop.html">
-                  <img src="../assets/product-1-1.jpg" alt="product1" class="normal-img"/>
-               <span> <img src="../assets/product-1-2.jpg" alt="product1" class="hover-img">
-                </a>
-                <div class="wishlist-icons">
-                  <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
-                    <span class="desc1">Quick View
-                    </span>
-                  </span>
-                  <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
-                    <span class="desc2">Add To Wishlist
-                    </span>
-                  </span>
-                  <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
-                    <span class="desc3">Compare
-                    </span>
-                  </span>
-                </div>
-            </span>
-                <span class="feature prod1">Hot</span>
+                  <a href="../HTML/shop.html">
+                        <img src="../assets/product-1-1.jpg" alt="product1" class="normal-img"/>
+                    <span> <img src="../assets/product-1-2.jpg" alt="product1" class="hover-img">
+                        <div class="wishlist-icons">
+                            <span class="icons"><i class="fa-regular fa-eye" id="eye-icon"></i>
+                              <span class="desc1">Quick View </span>
+                            </span>
+                            <span class="icons"><i class="fa-regular fa-heart" id="heart-icon"></i>
+                              <span class="desc2">Add To Wishlist</span>
+                            </span>
+                            <span class="icons"><i class="fa-solid fa-code-compare" id="compare-icon"></i>
+                              <span class="desc3">Compare</span>
+                            </span>
+                        </div>
+                     </span>
+                  </a>
+                  <span class="feature prod1">Hot</span>
               </div>
               <p style="color: rgb(101, 107, 107)">Clothing</p>
               <p style="font: 700; font-size: 18px">Colorful Pattern Shirts</p>
