@@ -333,6 +333,11 @@ p {
   background-color: rgb(245, 178, 77);
 }
 
+.category-div-btns button:hover {
+  color: rgb(46, 93, 72);
+  background-color: rgb(245, 178, 77);
+}
+
 .stars {
   color: rgb(226, 174, 78);
 }
@@ -584,7 +589,7 @@ footer {
 .cart-totals td {
   border-spacing: 0;
   padding: 16px 50px;
-  padding-right: 150px;
+  padding-right: 40px;
 }
 
 .dashboard i,
@@ -773,7 +778,7 @@ textarea {
   gap: 70px;
   padding: 50px;
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: space-between;
 }
 .login,
@@ -785,8 +790,8 @@ textarea {
 }
 
 .login-register-container input {
+  width: 80%;
   padding: 10px 10px;
-  padding-right: 300px;
   margin: 10px 0;
   margin-left: 20px;
   border-radius: 4px;
@@ -798,14 +803,56 @@ textarea {
   margin-left: 20px;
 }
 
-.menu-burger {
+.nav-container {
+  position: relative;
+}
+
+/*  hiding the hamburger menu */
+.hamburger {
   display: none;
+  position: relative;
+  z-index: 100;
 }
 
-@media (min-width: 1281px) {
+.options-vertical {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #f6eded;
+  width: 200px;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+.options-vertical li {
+  padding: 8px;
+}
+
+.hamburger:hover .options-vertical {
+  display: block;
+}
+
+.hamburger:hover .options-vertical ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.options-vertical li a {
+  display: block;
+  padding: 8px 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.options-vertical li a:hover {
+  background-color: #ddd;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -816,7 +863,7 @@ textarea {
   .search {
     display: none;
   }
-  .menu-burger {
+  .hamburger {
     display: block;
   }
   .hero-section {
@@ -877,9 +924,76 @@ textarea {
     display: flex;
     flex-wrap: wrap;
   }
+  .dashboard-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin: 50px;
+  }
+  .dashboard td,
+  .dashboard th,
+  .message td,
+  .message th {
+    border-spacing: 0;
+    padding: 10px;
+  }
+
+  .compare-table {
+    border-collapse: collapse;
+    text-align: left;
+  }
+  .compare-table td {
+    border-spacing: 0;
+    padding: 20px;
+  }
+  .compare-table td img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .login-register-container {
+    gap: 70px;
+    /* padding: 50px; */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .login,
+  .register {
+    padding-top: 20px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 70%;
+  }
+  .wishlist-container,
+  .additional-info-container {
+    position: relative;
+    padding: 50px;
+    margin: 10px auto;
+    width: 80%;
+    border-width: 70%;
+  }
+
+  .wishlist-container table,
+  .additional-info-container table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  .shipping-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .cart-totals {
+    width: 70%;
+  }
+  .cart-totals td {
+    width: 80%;
+    padding: 10px;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 100%;
   }
@@ -887,7 +1001,7 @@ textarea {
   .search {
     display: none;
   }
-  .menu-burger {
+  .hamburger {
     display: block;
   }
   .hero-section {
@@ -948,7 +1062,68 @@ textarea {
     display: flex;
     flex-wrap: wrap;
   }
-}
+  .dashboard-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+    padding: 0 20px;
+  }
+  .compare-table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 80%;
+  }
+  .compare-table td {
+    border-spacing: 0;
+    padding: 15px;
+  }
+  .compare-table td img {
+    width: 80px;
+    height: 80px;
+  }
+  .login-register-container {
+    gap: 70px;
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+  }
+  .login,
+  .register {
+    padding-top: 20px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 90%;
+  }
+  .wishlist-container,
+  .additional-info-container {
+    position: relative;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-width: 70%;
+  }
 
-@media (min-width: 320px) and (max-width: 480px) {
+  .wishlist-container table,
+  .additional-info-container table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+
+  .shipping-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .cart-totals {
+    width: 80%;
+  }
+
+  .cart-totals td {
+    width: 80%;
+    padding: 6px;
+  }
 }
