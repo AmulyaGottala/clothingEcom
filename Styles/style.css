@@ -817,7 +817,7 @@ textarea {
 .options-vertical {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 0;
   background-color: #f6eded;
   width: 200px;
@@ -828,6 +828,10 @@ textarea {
 }
 
 .hamburger:hover .options-vertical {
+  display: block;
+}
+
+.options-vertical:hover {
   display: block;
 }
 
@@ -991,6 +995,9 @@ textarea {
     width: 80%;
     padding: 10px;
   }
+  .options-vertical:hover {
+    display: block;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1125,5 +1132,8 @@ textarea {
   .cart-totals td {
     width: 80%;
     padding: 6px;
+  }
+  .options-vertical:hover {
+    display: block;
   }
 }
