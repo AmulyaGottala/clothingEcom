@@ -582,7 +582,8 @@ footer {
 }
 .compare-table td {
   border-spacing: 0;
-  padding: 10px 50px;
+  padding: 20px;
+  text-align: center;
 }
 
 .cart-totals td {
@@ -943,7 +944,6 @@ textarea {
 
   .compare-table {
     border-collapse: collapse;
-    text-align: left;
   }
   .compare-table td {
     border-spacing: 0;
